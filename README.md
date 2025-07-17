@@ -19,7 +19,7 @@
 
 ```bash
 # 1. Descarga o clona el proyecto
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/legacyum/sistema-analisis-ventas-ia.git
 
 # 2. Ejecuta (instala todo automáticamente)
 python main.py
@@ -128,7 +128,7 @@ python dashboard.py
 ### 🔧 **Opción 1: Automática (Recomendada)**
 ```bash
 # 1. Descargar el proyecto
-git clone [tu-repositorio]
+git clone https://github.com/legacyum/sistema-analisis-ventas-ia.git
 cd Proyecto_2
 
 # 2. Ejecutar selector (instala todo automáticamente)

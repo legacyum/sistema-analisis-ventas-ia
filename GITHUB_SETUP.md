@@ -8,7 +8,7 @@ Ve a https://github.com/new y crea un repositorio llamado: `sistema-analisis-ven
 ### 2. Conectar repositorio local con GitHub
 ```bash
 # Agregar repositorio remoto
-git remote add origin https://github.com/TU_USUARIO/sistema-analisis-ventas-ia.git
+git remote add origin https://github.com/legacyum/sistema-analisis-ventas-ia.git
 
 # Verificar conexión
 git remote -v
@@ -47,7 +47,7 @@ Para documentación web automática:
 
 ### 2. Agregar badge al README:
 ```markdown
-[![Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://TU_USUARIO.github.io/sistema-analisis-ventas-ia/)
+[![Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://legacyum.github.io/sistema-analisis-ventas-ia/)
 ```
 
 ## 🔄 Flujo de Trabajo Diario
