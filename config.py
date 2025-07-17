@@ -67,6 +67,20 @@ COLOR_SECUNDARIO = "#2c3e50"
 COLOR_EXITO = "#27ae60"
 COLOR_ADVERTENCIA = "#f39c12"
 
+# 🌈 COLORES ESPECÍFICOS PARA GRÁFICOS
+COLORES_GRAFICOS = [
+    "#3498db",  # Azul principal
+    "#e74c3c",  # Rojo
+    "#2ecc71",  # Verde
+    "#f39c12",  # Naranja
+    "#9b59b6",  # Púrpura
+    "#1abc9c",  # Turquesa
+    "#34495e",  # Gris oscuro
+    "#e67e22",  # Naranja oscuro
+    "#95a5a6",  # Gris claro
+    "#f1c40f"   # Amarillo
+]
+
 # 📊 CONFIGURACIÓN DE EXPORTACIÓN
 FORMATOS_EXPORTACION = ['xlsx', 'csv', 'png', 'pdf']
 INCLUIR_GRAFICOS_EN_EXCEL = True

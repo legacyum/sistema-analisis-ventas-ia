@@ -45,9 +45,39 @@ Thumbs.db
 *.temp
 temp/
 
-# Archivos de Excel generados (opcional - puedes incluirlos)
+# 📊 Datos sensibles y temporales
+*.csv
+datos_reales/
+backup_datos/
+temp_data/
+
+# 📁 Archivos Excel temporales
+~$*.xlsx
+~$*.xls
 Reporte_Consolidado.xlsx
 Reporte_Grafico_*.png
+
+# 📋 Logs y debugging
+*.log
+logs/
+debug/
+
+# 🤖 Modelos de IA entrenados (opcionales)
+models/
+*.pkl
+*.joblib
+*.h5
+
+# 📊 Streamlit cache
+.streamlit/
+
+# 🧪 Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 🚀 Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
 
 # Logs
 *.log
