@@ -14,8 +14,22 @@
 - 📈 **Analiza tendencias** y patrones automáticamente
 - 🎨 **Múltiples dashboards** para diferentes necesidades
 - 💡 **Genera recomendaciones** inteligentes para tu negocio
+- 🎯 **VISTA FÁCIL** - Interfaz web simplificada para usuarios nuevos
 
 ## 🚀 **INICIO ULTRA RÁPIDO**
+
+### 🎯 **VISTA FÁCIL (Nuevo - Recomendado para principiantes)**
+
+```bash
+# Interfaz web simplificada - Un solo comando
+python lanzar_vista_facil.py
+
+# O alternativamente:
+python vista_facil.py
+```
+**🌐 Se abre automáticamente en: http://localhost:8053**
+
+### 📋 **Método tradicional**
 
 ```bash
 # 1. Descarga o clona el proyecto
@@ -27,6 +41,7 @@ python main.py
 # 3. Elige tu opción favorita:
 #    → Opción 4: Dashboard IA Premium
 #    → Opción 7: Demo completo con datos
+#    → Opción 9: VISTA FÁCIL
 ```
 
 ## 🎮 **DEMO INMEDIATO**
@@ -85,7 +100,21 @@ python ejecutar_dashboard.py
 - **Correlaciones:** Entre variables de negocio
 - **Anomalías:** Detección de valores atípicos
 
-## � **Dashboards Disponibles**
+## 🎨 **Dashboards Disponibles**
+
+### 🎯 **VISTA FÁCIL** - Puerto 8053 ⭐ **NUEVO**
+```bash
+python lanzar_vista_facil.py
+# o
+python vista_facil.py
+```
+**Características:**
+- 🌐 Interfaz web moderna y simplificada
+- 🎯 Perfecto para usuarios nuevos y demostraciones
+- 🔄 Estado del sistema en tiempo real
+- 🚀 Un clic para generar datos demo
+- 📱 Acceso directo a todos los dashboards
+- 💡 Guías integradas y ayuda contextual
 
 ### 1️⃣ **Dashboard Premium (Dash)** - Puerto 8051 🏆
 ```bash

@@ -46,7 +46,8 @@ def mostrar_menu():
     6. 📝 Crear datos de ejemplo
     7. 🎯 Demo completo con IA
     8. 🚀 Proceso completo (1 + 2 + 3)
-    9. ❌ Salir
+    9. 🔥 VISTA FÁCIL - Interfaz simplificada
+    10. ❌ Salir
     """
     print(menu)
 
@@ -139,6 +140,31 @@ def ejecutar_demo_ia():
     print("\n🎯 Ejecutando demostración completa con IA...")
     ejecutar_script('demo_ia.py', 'Demostración completa con IA')
 
+def ejecutar_vista_facil():
+    """Ejecutar Vista Fácil en segundo plano"""
+    print("\n🎯 Iniciando Vista Fácil...")
+    try:
+        # Ejecutar Vista Fácil en segundo plano
+        process = subprocess.Popen([sys.executable, 'vista_facil.py'], 
+                                 cwd=os.getcwd())
+        print("✅ Vista Fácil iniciada exitosamente")
+        print("🌐 Abre tu navegador en: http://localhost:8053")
+        print("💡 Presiona Ctrl+C para detener la Vista Fácil")
+        
+        # Esperar a que el usuario presione Ctrl+C
+        try:
+            process.wait()
+        except KeyboardInterrupt:
+            print("\n🛑 Deteniendo Vista Fácil...")
+            process.terminate()
+            process.wait()
+            print("✅ Vista Fácil detenida")
+            
+    except FileNotFoundError:
+        print("❌ No se encontró el archivo vista_facil.py")
+    except Exception as e:
+        print(f"❌ Error al iniciar Vista Fácil: {e}")
+
 def verificar_archivos():
     """Verificar que todos los archivos necesarios existen"""
     archivos_necesarios = [
@@ -147,7 +173,8 @@ def verificar_archivos():
         'reporte_grafico.py',
         'dashboard_ia.py',
         'analisis_ia.py',
-        'crear_ejemplo.py'
+        'crear_ejemplo.py',
+        'vista_facil.py'
     ]
     
     archivos_faltantes = []
@@ -204,7 +231,7 @@ def main():
         mostrar_menu()
         
         try:
-            opcion = input("👉 Selecciona una opción (1-9): ").strip()
+            opcion = input("👉 Selecciona una opción (1-10): ").strip()
             
             if opcion == '1':
                 ejecutar_script('automatizacion.py', 'Consolidación de archivos Excel')
@@ -231,11 +258,14 @@ def main():
                 proceso_completo()
                 
             elif opcion == '9':
+                ejecutar_vista_facil()
+                
+            elif opcion == '10':
                 print("\n👋 ¡Hasta luego!")
                 break
                 
             else:
-                print("❌ Opción no válida. Por favor, selecciona 1-9.")
+                print("❌ Opción no válida. Por favor, selecciona 1-10.")
             
             # Pausa antes de mostrar el menú nuevamente
             input("\n⏸️  Presiona Enter para continuar...")
